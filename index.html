@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+  
+  <body>
+
+    <style>
+      body {
+        margin: 0;
+      }
+        .hidden {
+          display: none !important;
+        }
+        h1 {
+          color: white;
+          font-size: 70px;
+        }
+        .winner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          z-index: 1;  /*da se pojavi na vrhu canvas elementa */
+          height: 100vh; /* % viewpoint-a na kojem elementu postavimo */
+          width: 100vh;
+        }
+      
+    </style>
+    </head>
+    <div class="winner hidden">
+      <h1>You Win!</h1>
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
